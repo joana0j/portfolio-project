@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Space+Mono&display=swap'); 
+
+:root {
+    --main-bg-color:#000000;
+    --text-color:#B2BAD4;
+    --highlight-color:#C778DD;
+    --hover-and-footer-color:#272727;
+
+    --primary-font:'Krona One', sans-serif;
+    --secondary-font:'Montserrat', sans-serif;
+    --paragraph-font:'Space Mono', monospace;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--main-bg-color);
+
+}
+
+.menu {
+    display: flex;
+    padding: 1% 0% 1% 12%;
+    gap: 3%;
+    background-color: var(--highlight-color);
+}
+
+.menu_link {
+    font-family: var(--secondary-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--main-bg-color);
+    text-decoration: none;
+}
+
+.menu_link:hover {
+    color: var(--hover-and-footer-color);
+}
+
+.title_about {
+    font-size: 1.8rem;
+    color: var(--highlight-color);
+    padding-bottom: 0.9rem;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 2.25rem;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.1rem;
+}
+
+.container {
+    padding: 4% 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5.1rem;
+    
+}
+
+.container__content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.highlights {
+    color: var(--highlight-color);
+}
+
+.paragraph_text {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-family: var(--paragraph-font);
+}
+
+h2 {
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-top: 2%;
+}
+
+.content__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    color: var(--highlight-color);
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    width: 42%;
+    padding: 0.4rem 0.4rem 0.5rem 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: 0.06rem solid var(--highlight-color);
+
+}
+
+.links:hover {
+    background-color: var(--hover-and-footer-color);
+}
+
+#github, #linkedin {
+    width: 1.5rem;
+
+}
+
+.image {
+    width: 30%;
+    height: 4%;
+    padding-bottom: 3.9rem;
+}
+
+.footnote {
+    padding: 1%;
+    text-align: center;
+    align-content: flex-end;
+    color: var(--hover-and-footer-color);
+    font-family: var(--primary-font);
+    font-size: 0.8rem;
+}
+
+@media (min-width: 240px) and (max-width: 1180px) {
+    .menu {
+        padding: 1% 0% 1% 10%;
+        gap: 6%;
+    }
+        
+    .container {
+        padding: 2% 8%;
+        flex-direction: column-reverse;
+        gap:0.3rem;
+    }
+
+    .container__content {
+        width: auto;
+    }
+
+    h1 {
+        font-size:1.5rem;
+        line-height: 2.4rem;
+
+    }
+
+    .image {
+        width: 50%;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .footnote {
+        padding: 6% 0% 3% 0%;
+    }
+}
